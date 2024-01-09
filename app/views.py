@@ -31,7 +31,7 @@ def message(request):
 def print_message_created_or_updated(sender, instance, created, **kwargs):
     if not created and (instance.respond_title or instance.respond_text):
         port = 465
-        sender, password = "artinmohajeri@gmail.com", "iqxh ikau caba tyod"
+        sender, password = "your_email@gmail.com", "your password"
         to = instance.email
         subject = instance.respond_title
         message = instance.respond_text
